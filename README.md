@@ -5,13 +5,11 @@ This project is a MCP server that can be used to communicate with the Accord Pro
 Claude Desktop querying an agreement
 
 
-
 ## Operation of the Server
 The MCP server is involked by an LLM when it needs to interact with the Agreement Server to allow read and write operations on templates and agreements. This allows twemplates agreements to be queried and created.
 
 ### Architecture
-![Architecture of the MCP Server](arch.png)
-
+<img src="arch.png" alt="Architecture of the MCP Server" style="margin: 0; padding: 0;">
 Here is an eample sequence of operations:
 
 ```mermaid
