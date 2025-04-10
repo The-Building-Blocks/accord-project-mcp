@@ -1,5 +1,5 @@
-# Accord Project Agent Protocol
-This project is a MCP server that can be ussed to communicate with the Accord Project Agreement Protocol (APAP) OpenAPI specificatiion defined at https://github.com/accordproject/apap.
+# Accord Project Agent Interface
+This project is a MCP server that can be used to communicate with the Accord Project Agreement Protocol (APAP) OpenAPI specificatiion as defined in https://github.com/accordproject/apap.
 
 ![Claude Desktop MCP Server](claude_screenshot.png)
 Claude Desktop querying an agreement
