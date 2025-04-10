@@ -9,6 +9,9 @@ Claude Desktop querying an agreement
 ## Operation of the Server
 The MCP server is involked by an LLM when it needs to interact with the Agreement Server to allow read and write operations on templates and agreements. This allows twemplates agreements to be queried and created.
 
+### Architecture
+![Architecture of the MCP Server](arch.png)
+
 Here is an eample sequence of operations:
 
 ```mermaid
