@@ -1,7 +1,7 @@
 ## Accord Project Agent Protocol
 This project is a MCP server that can be ussed to communicate with the Accord Project Agreement Protocol (APAP) OpenAPI specificatiion defined at https://github.com/accordproject/apap.
 
-![Claude Desktop MCP Server](./docs/images/claude-mcp-server.png)
+![Claude Desktop MCP Server](claude-mcp-server.png)
 Claude Desktop querying an agreement
 
 ## Building the project:
@@ -20,6 +20,7 @@ For Claude Desktop the Claude configuration file called claude_desktop_config.js
 2. APAP_BASE_URL pointing to the APAP server url including a port number
 3. Depending on the implementation for the APAP Server a valid JWT_TOKEN may be needed
 
+```json
 configuration details:
 {
   "mcpServers": {
@@ -36,6 +37,7 @@ configuration details:
       }
     }
 }
+```
 
 Once configured, when Claude is started there should be a hammer icon at the bottom of the chat window that when pressed should contain the various tools implemented by this MCP server in list of Available MCP tools.
 
