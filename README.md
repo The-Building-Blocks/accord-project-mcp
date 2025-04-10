@@ -1,8 +1,40 @@
-## Accord Project Agent Protocol
+# Accord Project Agent Protocol
 This project is a MCP server that can be ussed to communicate with the Accord Project Agreement Protocol (APAP) OpenAPI specificatiion defined at https://github.com/accordproject/apap.
 
 ![Claude Desktop MCP Server](claude_screenshot.png)
 Claude Desktop querying an agreement
+
+
+
+## Operation of the Server
+The MCP server is involked by an LLM when it needs to interact with the Agreement Server to allow read and write operations on templates and agreements. This allows twemplates agreements to be queried and created.
+
+Here is an eample sequence of operations:
+
+```mermaid
+sequenceDiagram
+    participant C as MCP Client
+    participant T as MCP Server
+    participant S as Agreement Server
+    C->>T: Get Available Prompts
+    T->>C: List of Available Prompts
+    C->>T: Get Available Tools
+    T->>C: List of Available Tools
+    C->>T: Get Available Resources
+    T->>C: List of Available Resources
+    C->>T: Create a Template with text and model
+    T->>S: Deploy Template
+    S->>T: Template ID
+    T->>C: Template Created
+    C->>T: Create an Agreement with data
+    T->>S: Create Agreement with Data and State
+    S->>T: Agreement Details
+    T->>C: Agreement Created
+    C->>T: Invoke an Agreement Clause
+    T->>S: Trigger Agreement with Request Data
+    S->>T: Trigger Response and Updated State
+```
+
 
 ## Building the project:
 The project needs to be compiled from TypeScript to JavaScript by running the following:
