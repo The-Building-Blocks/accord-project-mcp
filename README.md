@@ -1,3 +1,5 @@
+Note that the core elements of this project are currently beign integrated into the core APAP API at [https://github.com/accordproject/apap](https://github.com/accordproject/apap)
+
 # Accord Project Agent Interface
 This project is a MCP server that can be used to communicate with the Accord Project Agreement Protocol (APAP) OpenAPI specification as defined in https://github.com/accordproject/apap.
 
